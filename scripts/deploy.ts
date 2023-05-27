@@ -1,4 +1,5 @@
-import { ethers } from "hardhat";
+import { ethers, run } from "hardhat";
+import { HardhatRuntimeEnvironment } from "hardhat/types";
 
 async function main() {
   const NFTMarketplace = await ethers.getContractFactory("NFTMarketplace");
