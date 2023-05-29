@@ -6,8 +6,10 @@ const { publicClient, webSocketPublicClient } = configureChains(
   [publicProvider()]
 );
 
-export const config = createConfig({
+const config = createConfig({
   autoConnect: true,
   publicClient,
   webSocketPublicClient,
 });
+
+export default config;
